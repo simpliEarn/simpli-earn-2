@@ -44,10 +44,32 @@ function normalizeLinkedIn(url: string): string {
   return `https://${t}`;
 }
 
-const projectLeads: TeamMember[] = [
+const leadEngineers: TeamMember[] = [
+  {
+    name: "Ritwij Ghosh",
+    role: "Lead Software Engineer",
+    description:
+      "I study Computer Science at Georgia Tech, concentrating on Machine Learning, Aritifical Intelligence, and Embedded Systems. I specialize in buiding AI solutions across industries such as manufacturing, consulting, and financial technology. I'm passionate about improving and facilitating people's lives through creative applications of cutting-edge technologies.",
+    image: "/images/team_imgs/Ritwij_Ghosh.jpg",
+    socials: {
+      linkedin: "http://www.linkedin.com/in/ritwij-ghosh",
+      github: "https://github.com/ritwij-ghosh",
+    },
+  },
+  {
+    name: "Soham Pati",
+    role: "Lead Software Engineer",
+    description:
+      "I'm a fourth-year Computer Science student at Georgia Tech. In my free time, I enjoy golfing and playing the violin.",
+    image: "/images/team_imgs/Soham_Pati.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/soham--pati/",
+      github: "https://github.com/sohampati",
+    },
+  },
   {
     name: "Gauri Sharma",
-    role: "Project Lead",
+    role: "Lead Software Engineer",
     description:
       "I'm a Computer Science student at Georgia Tech exploring how AI and language technologies can help us understand human and financial systems. My work combines NLP, social dynamics, finance, and AI safety to study how people communicate, make decisions, and build trust!",
     image: "/images/team_imgs/Gauri_Sharma.png",
@@ -56,83 +78,126 @@ const projectLeads: TeamMember[] = [
       github: "https://github.com/gauri-sharmaa/gauri-sharmaa",
     },
   },
-  {
-    name: "Ritwij Ghosh",
-    role: "Project Lead",
-    description:
-      "I study Computer Science at Georgia Tech, concentrating on Machine Learning, Aritifical Intelligence, and Embedded Systems. I specialize in buiding AI solutions across industries such as manufacturing, consulting, and financial technology. I'm passionate about improving and facilitating people's lives through creative applications of cutting-edge technologies.",
-    image: "/images/team_imgs/Ritwij_Ghosh.jpeg",
-    socials: {
-      linkedin: "http://www.linkedin.com/in/ritwij-ghosh",
-      github: "https://github.com/ritwij-ghosh",
-    },
-  },
-  {
-    name: "Soham Pati",
-    role: "Project Lead",
-    description:
-      "I'm a third-year Computer Science student at Georgia Tech. In my free time, I enjoy golfing and playing the violin.",
-    image: "/images/team_imgs/Soham_Pati.jpeg",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/soham--pati/",
-      github: "https://github.com/sohampati",
-    },
-  },
 ];
 
-const productTeam: TeamMember[] = [
+const rdEngineers: TeamMember[] = [
   {
-    name: "Aadi Dash",
-    role: "Product",
-    description:
-      "I'm a first-year Computer Science major interested in ML, LLM fine-tuning, and statistics. Outside of school I like to play music, watch sports, and eat Chipotle.",
-    image: "/images/team_imgs/Aadi_Dash.jpg",
+    name: "Yuyang Lin (Michael)",
+    role: "R&D Software Engineer",
+    description: "1st year CS major, interested in AI and finance.",
+    image: "/images/team_imgs/Yuyang_Lin.jpg",
     socials: {
-      linkedin: "https://www.linkedin.com/in/aadidash/",
-      github: "",
+      linkedin: "https://www.linkedin.com/in/yuyang-lin3",
+      github: "https://github.com/MichaelLin3333",
     },
   },
   {
-    name: "Sanjana Devarajan",
-    role: "Product",
+    name: "Kareem Alaiwat",
+    role: "R&D Software Engineer",
     description:
-      "I'm an Industrial and Systems Engineering major with a FinTech minor at Georgia Tech, interested in the intersection of mathematics, computer science, and financial markets. In my free time, I enjoy playing tennis.",
-    image: "/images/team_imgs/Sanjana_Devarajan.jpg",
+      "I'm a first-year Computer Science major at Georgia Tech interested in full stack and mobile engineering. I love building apps people actually use. On campus, I'm involved with BDBI, iOS Club, and MSA.",
+    image: "/images/team_imgs/Kareem_Alaiwat.jpg",
     socials: {
-      linkedin: "https://www.linkedin.com/in/sanjana-devarajan-a86618267/",
-      github: "",
+      linkedin: "https://www.linkedin.com/in/kareem-alaiwat/",
+      github: "https://github.com/kalaiwat",
     },
   },
   {
-    name: "Ahalya Anil",
-    role: "Product - Red Flag",
+    name: "Devanshu Shah",
+    role: "R&D Software Engineer",
     description:
-      "I'm a CS major with concentrations in Intelligence and Cybersecurity & Privacy. On SimpliEarn I work as a product developer and implemented the red flag detection feature.",
-    image: "/images/team_imgs/Ahalya_Anil.jpg",
+      "I'm a Computer Science student at Georgia Tech focused on Machine Learning, Artificial Intelligence, and Systems. I build AI solutions across industries like retail, financial technology, and renewable energy. I'm driven by using cutting-edge technology to make people's lives easier, more accessible, and better informed.",
+    image: "/images/team_imgs/Devanshu_Shah.jpg",
     socials: {
-      linkedin: normalizeLinkedIn("www.linkedin.com/in/ahalya-anil-19411137a"),
-      github: "https://github.com/aanil677",
+      linkedin: "https://www.linkedin.com/in/devanshushah1/",
+      github: "https://github.com/devanshushahs",
     },
   },
   {
-    name: "Alexander Stewart",
-    role: "Product - RAG Citations",
+    name: "Megh Patel",
+    role: "R&D Software Engineer",
     description:
-      "Industrial Engineering major at Georgia Tech, from Lincoln, Massachusetts. Actively involved on campus through BDBI, GTSF investments committee, and Data Science @ GT. On SimpliEarn I work as a product developer and helped integrate source citations into the project and contribute ideas. My favorite hobbies are going on runs and going out.",
-    image: "/images/team_imgs/Alexander_Stewart.jpeg",
+      "I'm a first-year Computer Science student at Georgia Tech interested in artificial intelligence and its applications in finance and physical systems. I'm passionate about applying AI/ML to solve real-world problems in order to create impact. In my free time, I enjoy hanging out with friends and playing spikeball and cricket.",
+    image: "/images/team_imgs/Megh_Patel.jpg",
     socials: {
-      linkedin: normalizeLinkedIn("https://www.linkedin.com/in/alexander-stewart-480731373"),
-      github: "https://github.com/AlexanderStewartt",
+      linkedin: "https://www.linkedin.com/in/meghp792",
+      github: "https://github.com/Megh-P",
+    },
+  },
+  {
+    name: "Kushagra Behl",
+    role: "R&D Software Engineer",
+    description:
+      "I'm a Math & Computing student at Georgia Tech interested in ML, startups, and finance. On SimpliEarn I test trading ideas against historical data and fix bugs in our dev infrastructure. Outside of school, I enjoy playing basketball and trying new food!",
+    image: "/images/team_imgs/Kushagra_Behl.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/kushagra-behl",
+      github: "https://github.com/superkush06",
+    },
+  },
+  {
+    name: "Anshul Kollur",
+    role: "R&D Software Engineer",
+    description:
+      "I'm a computer science student at Georgia Tech interested in how AI can benefit many people's lives in unique ways, which is why I like working on software that solves real-world problems. Outside of coding, I enjoy basketball and poker.",
+    image: "/images/team_imgs/Anshul_Kollur.png",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/anshul-kollur/",
+      github: "https://github.com/anshulk08",
+    },
+  },
+  {
+    name: "Ishan Patel",
+    role: "R&D Software Engineer",
+    description:
+      "I'm a first-year Computer Science student and Mathematics minor at Georgia Tech. Currently exploring the intersection of machine learning and quantitative trading. Most importantly, I love Taco Bell.",
+    image: "/images/team_imgs/Ishan_Patel.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/ishanpatel16/",
+      github: "https://github.com/ishanpatel-16",
     },
   },
   {
     name: "Ariana Luan",
-    role: "Product",
+    role: "R&D Software Engineer",
     description:
-      "I'm a first-year Computer Science student interested in full stack development and product management.",
+      "Hello! My name is Ariana and I'm a second year CS major (Cyber/Intelligence)! I'm interested in cybersecurity and PM, and in my free time I love to lift, bedazzle, and try new restaurants!",
     image: "/images/team_imgs/Ariana_Luan.jpg",
     socials: {
-      linkedin: normalizeLinkedIn("www.linkedin.com/in/ariana-luan"),
+      linkedin: "https://www.linkedin.com/in/ariana-luan",
+      github: "",
+    },
+  },
+  {
+    name: "Aarav Joglekar",
+    role: "R&D Software Engineer",
+    description:
+      "Hey, I'm Aarav. I'm a BS/MS student at Georgia Tech studying CS (AI and computing systems) and machine learning. I got into engineering because I wanted a real way to contribute to something bigger than myself, and that still drives what I work on. Outside of code, you'll probably find me tending plants, looking at prediction markets, or reading up on the latest news.",
+    image: "/images/team_imgs/Aarav_Joglekar.jpg",
+    socials: {
+      linkedin: "",
+      github: "",
+    },
+  },
+  {
+    name: "Sanjay Mavalli",
+    role: "R&D Software Engineer",
+    description:
+      "I'm a first year Math & CS student at Georgia Tech, focusing in Machine Learning optimization and how AI systems can better analyze and predict outcomes in various financial markets and economies.",
+    image: "/images/team_imgs/Sanjay_Mavalli.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/sanjay-mavalli-912062322",
+      github: "https://github.com/sanjaymav7",
+    },
+  },
+  {
+    name: "Aadi Dash",
+    role: "R&D Software Engineer",
+    description:
+      "I'm a second-year Computer Science major interested in ML, LLM fine-tuning, and statistics. Outside of school I like to play music, watch sports, and eat Chipotle.",
+    image: "/images/team_imgs/Aadi_Dash.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/aadidash/",
       github: "",
     },
   },
@@ -293,6 +358,39 @@ const legacyMembers: TeamMember[] = [
       github: "https://github.com/apbuilds",
     },
   },
+  {
+    name: "Sanjana Devarajan",
+    role: "Product",
+    description:
+      "I'm an Industrial and Systems Engineering major with a FinTech minor at Georgia Tech, interested in the intersection of mathematics, computer science, and financial markets. In my free time, I enjoy playing tennis.",
+    image: "/images/team_imgs/Sanjana_Devarajan.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/sanjana-devarajan-a86618267/",
+      github: "",
+    },
+  },
+  {
+    name: "Ahalya Anil",
+    role: "Product - Red Flag",
+    description:
+      "I'm a second-year CS major with concentrations in Intelligence and Cybersecurity & Privacy. On SimpliEarn I work as a product developer and implemented the red flag detection feature.",
+    image: "/images/team_imgs/Ahalya_Anil.jpg",
+    socials: {
+      linkedin: normalizeLinkedIn("www.linkedin.com/in/ahalya-anil-19411137a"),
+      github: "https://github.com/aanil677",
+    },
+  },
+  {
+    name: "Alexander Stewart",
+    role: "Product - RAG Citations",
+    description:
+      "Industrial Engineering major at Georgia Tech, from Lincoln, Massachusetts. Actively involved on campus through BDBI, GTSF investments committee, and Data Science @ GT. On SimpliEarn I work as a product developer and helped integrate source citations into the project and contribute ideas. My favorite hobbies are going on runs and going out.",
+    image: "/images/team_imgs/Alexander_Stewart.jpeg",
+    socials: {
+      linkedin: normalizeLinkedIn("https://www.linkedin.com/in/alexander-stewart-480731373"),
+      github: "https://github.com/AlexanderStewartt",
+    },
+  },
 ];
 
 function TeamGrid({ members }: { members: TeamMember[] }) {
@@ -348,11 +446,11 @@ export default function AboutUs() {
         <section className={styles.teamSection}>
           <h2>Meet the Team</h2>
 
-          <h3 className={styles.teamSubheading}>Project leads</h3>
-          <TeamGrid members={projectLeads} />
+          <h3 className={styles.teamSubheading}>Lead Software Engineers</h3>
+          <TeamGrid members={leadEngineers} />
 
-          <h3 className={styles.teamSubheading}>Product team</h3>
-          <TeamGrid members={productTeam} />
+          <h3 className={styles.teamSubheading}>Current Members</h3>
+          <TeamGrid members={rdEngineers} />
 
           <h3 className={styles.teamSubheading}>Legacy members</h3>
           <TeamGrid members={legacyMembers} />
